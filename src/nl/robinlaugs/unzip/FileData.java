@@ -23,7 +23,6 @@ public class FileData {
 
     @Override
     public String toString() {
-        return this.name;
+        return String.format("FileData{name='%s', data='%s'}", this.name, new String(this.data));
     }
-
 }
