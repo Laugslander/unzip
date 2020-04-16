@@ -56,7 +56,6 @@ public class UnzipUtil {
 
             return ZIP_FILE_SIGNATURES.contains(dataIn.readInt());
         } catch (IOException e) {
-
             return false;
         }
     }
