@@ -32,7 +32,7 @@ public class UnzipUtil {
 
                 if (isZipped(unzippedFile)) {
                     unzippedFiles.addAll(unzip(unzippedFile));
-                } else {
+                } else if (!entry.isDirectory()) {
                     unzippedFiles.add(unzippedFile);
                 }
             }
